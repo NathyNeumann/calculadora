@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Rubik:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(78, 78, 78);
+}
+main{
+    display: table;
+    margin: 5% auto;
+
+    width: 16vw;
+    height: 70vh;
+    padding: 30px;
+    border: 3px solid rgba(111, 111, 111, 0.3);
+    border-radius: 50px;
+    box-shadow: 3px 3px 5px rgba(111, 111, 111, 0.3);
+}
+main, .painel, .visor, .row{
+    background-color: black;
+}
+
+.visor input{
+    margin-bottom: 20px;
+    padding: 3px 20px;
+
+    width: 230px;
+    height: 60px;
+    background-color:black;
+    
+    border-radius: 30px;
+    border: 3px solid black;
+    
+    font-family: 'Ranchers', cursive;
+    text-align: right;
+    font-size: 35pt;
+}
+
+
+.botao:focus{
+    display: none;
+}
+
+.botao{ 
+    margin: 8px 3px;
+    
+    width: 60px;
+    height: 60px;
+    background-color:rgb(26, 26, 26);
+
+    border: 2px solid rgb(111, 111, 111);
+    border-radius: 30px;
+    box-shadow: 4px 4px 6px rgba(50, 50, 50, 0.4);
+    
+    font-family: 'Ranchers', cursive;
+    font-size: 23pt;
+    color:  rgba(70, 69, 69, 0.9);
+}
+
+.botao:hover{
+    border: 3px solid rgba(111, 111, 111, 0.8);
+    transition: 0.2s;
+}
+
+.opera{
+    background-color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+.colorido{
+    background-color: rgb(255, 203, 106);
+    border: 2px solid rgb(237, 188, 98);;
+    width: 130px;
+}
+.colorido:hover{
+    background-color:rgb(237, 188, 98);
+    
+    transition: 0.3s;
+}
+/* para tela com tamanho menor que 600 px de largura*/
+
+@media (max-width: 600px){
+    *{
+        background-color: blanchedalmond;
+    }
+    main, .painel, .visor, .row, .botao{
+        background-color: white;
+    }
+    main{
+        margin-top: 25%;
+        height: 50vh;
+    }
+    .visor input{
+        background-color: white;
+        border: 3px solid white;
+        width: 140px;
+        height: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 15pt ;
+    }
+    
+    .botao{
+        margin: 5px 3px;
+        width: 35px;
+        height: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        font-size: 10pt ;
+    }
+
+    .colorido{
+        background-color: rgb(255, 203, 106);
+        border: 2px solid rgb(237, 188, 98);;
+        width: 80px;
+    }
+}
